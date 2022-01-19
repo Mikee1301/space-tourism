@@ -1,0 +1,48 @@
+
+.Home{
+  background: url(/assets/home/background-home-mobile.jpg) no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 667px;
+
+  
+
+  .Home__header{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+
+    &__top__title{
+      font-family: $-secondary-header-font;
+      letter-spacing: 2.7px;
+    }
+
+    &__main__title{
+      font-family: 'Bellefair', serif;
+      font-size: 5rem;
+      margin-top: 1.5rem;
+    }
+    
+    &__description{
+      margin-top: 1.5rem;
+    }
+  }
+  .Home__button{
+    display: grid;
+    place-items: center;
+    
+    background-color: $-neutral-white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    font-family: $-primary-header-font;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+
+    margin: 0 auto;
+    margin-top: 6rem;
+  }
+}

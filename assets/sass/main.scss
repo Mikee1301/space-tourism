@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100;200&family=Bellefair&family=Public+Sans:wght@300;400;700&display=swap');
 
-/*-----Varibales-----*/  
-/*Fonts*/
-$-main-font: 'Barlow', sans-serif;
-$-primary-header-font: 'Bellefair', serif;
-$-secondary-header-font: 'Barlow Condensed', sans-serif;
-
-$-main-font-size: 16px;
-/*Colors*/
-$-neutral-white: #fff;
+@import "variables";
 
 *{
   margin: 0;
@@ -20,53 +12,6 @@ body{
   font-family: $-main-font;
   color: $-neutral-white;
 }
-.container{
-  background: url(/assets/home/background-home-mobile.jpg) no-repeat;
-  background-size: cover;
-
-  width: 100%;
-  height: 667px;
-
-  nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1.3rem;
-  }
-
-  header{
-    text-align: center;
-    margin: 0 auto;
-    padding: 1rem;
-    h6{
-      font-family: $-secondary-header-font;
-      letter-spacing: 2.7px;
-    }
-    h1{
-      font-family: 'Bellefair', serif;
-      font-size: 5rem;
-      margin-top: 1.5rem;
-    }
-    p{
-      margin-top: 1.5rem;
-    }
-  }
-  .exploreBtn{
-    display: grid;
-    place-items: center;
-    
-    background-color: $-neutral-white;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-
-    font-family: $-primary-header-font;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #000;
-
-    margin: 0 auto;
-    margin-top: 6rem;
-  }
-}
+@import "navigation";
+@import "home";
+@import "distination";

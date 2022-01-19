@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="Distination">
+    <!-- Navigation -->
+    <div id="navigation-placeholder"></div>
+      <script>
+        $.get("/assets/html/navigation.html", function(data){
+          $("#navigation-placeholder").replaceWith(data);
+        });
+      </script> 
+    <div class="Distination__header">
+       <div class="Distination__header__tag">
+         <span class="Distination__header__tag__no">01</span>
+         Pick your destination
+       </div>
+       <img class="Distination__header__image" src="/assets/destination/image-moon.png" alt="">
+       <ul class="Distination__header__links">
+         <li class="Distination__header__links__link Distination__header__links--indicator">moon</li>
+         <li class="Distination__header__links__link">mars</li>
+         <li class="Distination__header__links__link">europa</li>
+         <li class="Distination__header__links__link">titan</li>
+       </ul>
+       <h1 class="Distination__header__title">moon</h1>
+    </div>
+    <p class="Distination__description">
+      See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+    </p>
+    <div class="Distination__details">
+       <div class="Distination__details__distance">
+         <h3 class="Distination__details__distance__label">avg. distance</h3>
+         <h1 class="Distination__details__distance__value">384,400 KM</h1>
+       </div>
+       <div class="Distination__details____time">
+         <h3 class="Distination__details__time__label">est. travel time</h3>
+         <h1 class="Distination__details__time__value">3 Days</h1>
+       </div>
+    </div>
+  </div>
+</body>
+</html>

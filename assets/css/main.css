@@ -15,14 +15,7 @@ body {
   color: #fff;
 }
 
-.container {
-  background: url(/assets/home/background-home-mobile.jpg) no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 667px;
-}
-
-.container nav {
+.Navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,28 +28,40 @@ body {
   padding: 1.3rem;
 }
 
-.container header {
+.Navigation__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.Home {
+  background: url(/assets/home/background-home-mobile.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 667px;
+}
+
+.Home .Home__header {
   text-align: center;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.container header h6 {
+.Home .Home__header__top__title {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
 }
 
-.container header h1 {
+.Home .Home__header__main__title {
   font-family: 'Bellefair', serif;
   font-size: 5rem;
   margin-top: 1.5rem;
 }
 
-.container header p {
+.Home .Home__header__description {
   margin-top: 1.5rem;
 }
 
-.container .exploreBtn {
+.Home .Home__button {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -70,5 +75,117 @@ body {
   color: #000;
   margin: 0 auto;
   margin-top: 6rem;
+}
+
+.Distination {
+  background: url(/assets/destination/background-destination-mobile.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+}
+
+.Distination__header {
+  text-align: center;
+}
+
+.Distination__header__tag__no {
+  opacity: .25;
+  margin-right: .5rem;
+}
+
+.Distination__header__image {
+  width: 170px;
+  margin: 2rem;
+}
+
+.Distination__header__links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0 0 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Distination__header__links__link {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+.Distination__header__links--indicator {
+  position: relative;
+}
+
+.Distination__header__links--indicator:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 17px;
+  left: 0;
+  background-color: #979797;
+}
+
+.Distination__header__title {
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Distination__description {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .9rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Distination__details {
+  padding-top: 1rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Distination__details::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: #383B4B;
+}
+
+.Distination__details__distance, .Distination__details__time {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Distination__details__distance__label, .Distination__details__time__label {
+  letter-spacing: 2.36px;
+  font-size: .9rem;
+  font-weight: 300;
+  color: #D0D6F9;
+  padding-bottom: .5rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.Distination__details__distance__value, .Distination__details__time__value {
+  font-size: 1.75rem;
 }
 /*# sourceMappingURL=main.css.map */

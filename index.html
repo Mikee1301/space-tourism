@@ -7,24 +7,28 @@
   <!-- Links -->
   <link rel="stylesheet" href="/assets/css/main.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
   <title>Space Tourism</title>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <img src="/assets/shared/logo.svg" alt="logo">
-      <div class="humbugerMenu">
-        <img src="/assets/shared/icon-hamburger.svg" alt="">
-      </div>
-    </nav>
-    <header>
-      <h5>SO, YOU WANT TO TRAVEL TO</h5>
-      <h1>SPACE</h1>
-      <p>
+  <div class="Home">
+    <!-- Navigation -->
+    <div id="navigation-placeholder"></div>
+      <script>
+        $.get("/assets/html/navigation.html", function(data){
+          $("#navigation-placeholder").replaceWith(data);
+        });
+      </script> 
+    <!-- Header -->
+    <header class="Home__header">
+      <h5 class="Home__header__top__title">SO, YOU WANT TO TRAVEL TO</h5>
+      <h1 class="Home__header__main__title">SPACE</h1>
+      <p class="Home__header__description">
         Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
       </p>
     </header>
-    <div class="exploreBtn">
+    <div class="Home__button">
       <span>explore</span>
     </div>
 

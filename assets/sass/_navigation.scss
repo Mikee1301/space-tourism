@@ -1,0 +1,12 @@
+.Navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.3rem;
+
+  &__logo{
+    width: 40px;
+    height: 40px;
+  }
+}
